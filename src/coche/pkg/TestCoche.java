@@ -27,5 +27,29 @@ public class TestCoche {
         c2.deposito = 200;
         c1.encendido = true;
         c2.fichaCoche();
+
+        Coche c3 = new Coche();
+        c3.marca = "Opel";
+        c3.modelo = "corsa";
+        c3.color = "Rojo";
+        c3.tipoCombustible = "Gasolina";
+        c3.deposito = 20;
+        c3.encendido = true;
+        c3.limiteDeposio = 90;
+        c3.velocidad = 70;
+        c3.maxDeposito = 100;
+
+        c3.fichaCoche();
+        c3.arrancarMotor();
+        c3.llenarDeposito(50);
+
+        c3.fichaCoche();
+        c3.arrancarMotor();
+        c3.acelerar();
+        c3.acelerar();
+        c3.fichaCoche();
+        c3.frenar();
+        c3.fichaCoche();
+
     }
 }
