@@ -12,5 +12,18 @@ public class TestModulo {
     programacion.descripcion = "Cositas";
     programacion.fichaModulo();
 
+    //REFERENCIA NULL DE LOS OBJETOS
+        /*
+        Modulo lmsi;
+        lmsi = null;
+        lmsi.fichaModulo(); */
+
+        Modulo lmsi = new Modulo();
+        lmsi = programacion;
+        lmsi.fichaModulo();
+
+        programacion.descripcion= "Es el modulo que más me gusta";
+        programacion.metodoDummy();
+
     }
 }

@@ -14,17 +14,25 @@ public class Modulo {
     String descripcion;
     int horasTotales;
 
+    void metodoDummy(){
+        String descripcion;
+        descripcion = "asiydfagvbjkdasdjasd";
+        System.out.println(this.descripcion); // llama al atributo y la variable deja de tener utilidad
+        //El this es para acceder a los atributos de la clase que se está instanciando
+    }
+
+
     void fichaModulo(){
         System.out.println("---------- Ficha del Modulo ----------");
-        System.out.println("Horas semanales : " + horasSemanales);
-        System.out.println("Profesor : " + profesor);
-        System.out.println("Nombre del modulo : " + nombreModulo);
-        System.out.println("Código del modulo : " + codigoModulo);
-        System.out.println("Curso : " + curso);
+        System.out.println("Horas semanales : " + this.horasSemanales);
+        System.out.println("Profesor : " + this.profesor);
+        System.out.println("Nombre del modulo : " + this.nombreModulo);
+        System.out.println("Código del modulo : " + this.codigoModulo);
+        System.out.println("Curso : " + this.curso);
         System.out.println("Horas totales : " + horasTotales());
-        System.out.println("Ciclo formativo : " + cicloFormativo);
-        System.out.println("¿Aprobado? :" + moduloAprobado());
-        System.out.println("Descripción : " + descripcion);
+        System.out.println("Ciclo formativo : " + this.cicloFormativo);
+        System.out.println("¿Aprobado? :" + this.moduloAprobado());
+        System.out.println("Descripción : " + this.descripcion);
         System.out.println("----------------------------------");
     }
 
